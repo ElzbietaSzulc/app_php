@@ -17,7 +17,7 @@
    
    if (empty($groups))
    {
-      echo 'Nie wybrałeś żadnej kategorii<br /><a href="index.html"> Back </a>
+      echo 'You did not choose any group<br /><a href="index.html"> Back </a>
    </center>';
       return;
    }

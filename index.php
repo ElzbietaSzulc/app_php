@@ -41,7 +41,7 @@
    {
      $data[0] = str_replace("\xef\xbb\xbf", '', $data[0]);
 	 
-     if (in_array($data[0], $groups))
+     if (in_array($data[4], $groups))
      {
         echo "<tr><td>$row</td><td>$data[0]</td><td>$data[4]</td></tr>";
         $row++;

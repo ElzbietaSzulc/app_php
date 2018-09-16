@@ -36,14 +36,14 @@
 
    $plik = fopen("Zeszyt1.csv","r");
    $row = 1;
-   echo "<tr><td>ID</td><td>STATUS</td><td>VISIT_ID</td><td>PHONE_NR</td><td>DATE</td><td>DOCTOR_ID</td></tr>";
+   echo "<tr><td>ID</td><td>USER_ID</td><td>STATUS</td></tr>";
    while(($data = fgetcsv($plik, 1000,";")) !== False)
    {
      $data[0] = str_replace("\xef\xbb\xbf", '', $data[0]);
 	 
      if (in_array($data[0], $groups))
      {
-        echo "<tr><td>$row</td><td>$data[0]</td><td>$data[1]</td><td>$data[2]</td><td>$data[3]</td><td>$data[4]</td></tr>";
+        echo "<tr><td>$row</td><td>$data[0]</td><td>$data[4]</td></tr>";
         $row++;
      } 
    }

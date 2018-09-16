@@ -39,7 +39,7 @@
    echo "<tr><td>ID</td><td>USER_ID</td><td>STATUS</td></tr>";
    while(($data = fgetcsv($plik, 1000,";")) !== False)
    {
-     $data[0] = str_replace("\xef\xbb\xbf", '', $data[0]);
+     $data[4] = str_replace("\xef\xbb\xbf", '', $data[4]);
 	 
      if (in_array($data[4], $groups))
      {
